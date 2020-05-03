@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Правила</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/Style.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<link rel="stylesheet" type="text/css" href="css/Animate.css">
+	<script src="js/burger_menu.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>
+        new WOW().init();
+    </script>
+</head>
+<body>
+
+	<!-- Header -->
+
+	<div class="mobile_nav mobile_nav_hide" id="s123">
+		<a href="index.php" class="mobile_nav_links">Главная</a>
+		<a href="donate.php" class="mobile_nav_links">Правила</a>
+		<a href="contacts.php" class="mobile_nav_links">Галерея</a>
+		<a href="contacts.php" class="mobile_nav_links">Обратная связь</a>
+	</div>
+	<div class="burger_overlay" onclick="click_overlay()"></div>
+
+	<div class="header wow fadeInDown">
+		<div class="header__inner">
+			<div class="header__item">
+				<p class="header__logo_text">#EcoChallenge</p>
+			</div>
+			<div class="header__item">
+				<a href="index.html" class="header__link">Главная</a>
+				<a href="rules.html" class="header__link">Правила</a>
+				<a href="gallery.html" class="header__link">Галерея</a>
+				<a href="contact.html" class="header__link">Обратная связь</a>
+				<a href="index.html#rules" class="header__btn">Начать</a>
+				<img src="images/menu.svg" alt="" class="burger_btn" onclick="click_burger_menu()">
+			</div>
+		</div>
+	</div>
+
+	<!-- Rules -->
+
+	<div class="rules_page">
+		<div class="rules_page__inner">
+			<p class="rules_page__title  wow fadeInDown">#EcoChallenge</p>
+			<div class="rules_page__container_rule">
+				<div class="rules_page__rules">
+					<div class="rules_page__rule wow fadeInLeft">
+						<div class="rules_page__round">
+							<p class="rules_page__round_num">1</p>
+						</div>
+						<p class="rules_page__condition_title" >Провести уборку в загрязненном месте города</p>
+					</div>
+					<div class="rules_page__rule wow fadeInLeft" data-wow-delay="0.1s">
+						<div class="rules_page__round">
+							<p class="rules_page__round_num">2</p>
+						</div>
+						<p class="rules_page__condition_title">Сделать фото отчет. Минимум 10 фото</p>
+					</div>
+					<div class="rules_page__rule wow fadeInLeft" data-wow-delay="0.2s">
+						<div class="rules_page__round">
+							<p class="rules_page__round_num">3</p>
+						</div>
+						<p class="rules_page__condition_title">Выложить фото отчет в intagram с хеш тегом  #EcoChallenge. Аккаунт должен быть открытым</p>
+					</div>
+				</div>
+				<img src="images/build.png" class="rules_page__img wow fadeInRight" >
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+
+	<div class="footer">
+		<div class="footer__inner">
+			<p class="footer__title">Навигация</p>
+			<div class="footer__nav">
+				<a href="index.html" class="footer__link">Главная</a>
+				<a href="rules.html" class="footer__link">Правила</a>
+				<a href="gallery.html" class="footer__link">Галерея</a>
+				<a href="contact.html" class="footer__link">Обратная связь</a>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

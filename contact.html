@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Правила</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/Style.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<link rel="stylesheet" type="text/css" href="css/Animate.css">
+	<script src="js/burger_menu.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>ё
+	<script>
+        new WOW().init();
+    </script>
+</head>
+<body>
+
+	<!-- Header -->
+
+	<div class="mobile_nav mobile_nav_hide" id="s123">
+		<a href="index.php" class="mobile_nav_links">Главная</a>
+		<a href="donate.php" class="mobile_nav_links">Правила</a>
+		<a href="contacts.php" class="mobile_nav_links">Галерея</a>
+		<a href="contacts.php" class="mobile_nav_links">Обратная связь</a>
+	</div>
+	<div class="burger_overlay" onclick="click_overlay()"></div>
+
+	<div class="header wow fadeInDown">
+		<div class="header__inner">
+			<div class="header__item">
+				<p class="header__logo_text">#EcoChallenge</p>
+			</div>
+			<div class="header__item">
+				<a href="index.html" class="header__link">Главная</a>
+				<a href="rules.html" class="header__link">Правила</a>
+				<a href="gallery.html" class="header__link">Галерея</a>
+				<a href="contact.html" class="header__link">Обратная связь</a>
+				<a href="index.html#rules" class="header__btn">Начать</a>
+				<img src="images/menu.svg" alt="" class="burger_btn" onclick="click_burger_menu()">
+			</div>
+		</div>
+	</div>
+
+	<!-- Contacts -->
+
+	<div class="contact">
+		<div class="contact__inner">
+			<p class="contact__title wow fadeInDown">Контакты</p>
+			<div class="contact__list">
+				<div class="contact__item wow fadeInUp">
+					<div class="contact__round">
+						<img src="images/phone.png" alt="" class="contact__round_img">
+					</div>
+					<div class="contact__text_container">
+						<p class="contact__item_title">Контактный номер</p>
+						<p class="contact__item_subtitle">+7 777 777 7777</p>
+					</div>
+				</div>
+				<div class="contact__item wow fadeInUp" data-wow-delay="0.1s">
+					<div class="contact__round">
+						<img src="images/email.png" alt="" class="contact__round_img">
+					</div>
+					<div class="contact__text_container">
+						<p class="contact__item_title">Электронная почта</p>
+						<p class="contact__item_subtitle">ecochallenge@gmail.com</p>
+					</div>
+				</div>
+				<div class="contact__item wow fadeInUp" data-wow-delay="0.2s">
+					<div class="contact__round">
+						<img src="images/telegram.png" alt="" class="contact__round_img">
+					</div>
+					<div class="contact__text_container">
+						<p class="contact__item_title">Telegram</p>
+						<p class="contact__item_subtitle">EcoChallenge</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Contact form -->
+
+	<div class="contact_form">
+		<div class="contact_form__inner">
+			<p class="contact_form__title wow fadeInDown">Форма обратной связи</p>
+			<div class="contact_form__container">
+				<div class="contact_form__img_container">
+					<img src="images/plant2.svg" alt="" class="contact_form__img wow fadeInLeft">
+				</div>
+				<div class="contact_form__form_container">
+					<input type="text" placeholder="Имя" class="contact_form__input wow fadeInRight">
+					<input type="text" placeholder="Email" class="contact_form__input wow fadeInRight" data-wow-delay="0.1s">
+					<textarea name="" placeholder="Сообщение" id="" cols="26" rows="10" class="contact_form__textarea wow fadeInRight" data-wow-delay="0.2s"></textarea>
+					<button class="contact_form__btn" onclick="dialogWindow()">Отправить</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+
+	<div class="footer">
+		<div class="footer__inner">
+			<p class="footer__title">Навигация</p>
+			<div class="footer__nav">
+				<a href="index.html" class="footer__link">Главная</a>
+				<a href="rules.html" class="footer__link">Правила</a>
+				<a href="gallery.html" class="footer__link">Галерея</a>
+				<a href="contact.html" class="footer__link">Обратная связь</a>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function dialogWindow(){
+			Swal.fire(
+			  'Спасибо за вопрос',
+			  'Мы постараемся ответить на ваш вопрос в ближайшее время',
+			  'success'
+			)
+		}
+	</script>
+</body>
+</html>

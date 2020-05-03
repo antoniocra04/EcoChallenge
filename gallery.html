@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Галерея</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/Style.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<link rel="stylesheet" type="text/css" href="css/Animate.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+	<script src="js/burger_menu.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>
+        new WOW().init();
+    </script>
+</head>
+<body>
+
+	<!-- Header -->
+	
+	<div class="mobile_nav mobile_nav_hide" id="s123">
+		<a href="index.php" class="mobile_nav_links">Главная</a>
+		<a href="donate.php" class="mobile_nav_links">Правила</a>
+		<a href="contacts.php" class="mobile_nav_links">Галерея</a>
+		<a href="contacts.php" class="mobile_nav_links">Обратная связь</a>
+	</div>
+	<div class="burger_overlay" onclick="click_overlay()"></div>
+
+	<div class="header wow fadeInDown">
+		<div class="header__inner">
+			<div class="header__item">
+				<p class="header__logo_text">#EcoChallenge</p>
+			</div>
+			<div class="header__item">
+				<a href="index.html" class="header__link">Главная</a>
+				<a href="rules.html" class="header__link">Правила</a>
+				<a href="gallery.html" class="header__link">Галерея</a>
+				<a href="contact.html" class="header__link">Обратная связь</a>
+				<a href="index.html#rules" class="header__btn">Начать</a>
+				<img src="images/menu.svg" alt="" class="burger_btn" onclick="click_burger_menu()">
+			</div>
+		</div>
+	</div>
+
+	<!-- Title -->
+
+	<div class="gallery__title">
+		<p class="gallery__title_text wow fadeInDown">Фото наших участников</p>
+	</div>
+
+	<!-- Slider -->
+
+  	<div class="swiper-container wow fadeInUp">
+    	<div class="swiper-wrapper">
+	      	<div class="swiper-slide" style="background-image: url(images/img_1.jpg);"></div>
+	      	<div class="swiper-slide" style="background-image: url(images/img_2.jpeg);"></div>
+			<div class="swiper-slide" style="background-image: url(images/img_3.jpeg);"></div>
+			<div class="swiper-slide" style="background-image: url(images/img_4.jpg);"></div>
+			<div class="swiper-slide" style="background-image: url(images/img_5.jpg);"></div>
+			<div class="swiper-slide" style="background-image: url(images/img_6.jpeg);"></div>
+			<div class="swiper-slide" style="background-image: url(images/img_7.jpg);"></div>
+			<div class="swiper-slide" style="background-image: url(images/img_8.jpg);"></div>
+			<div class="swiper-slide" style="background-image: url(images/img_9.jpg);"></div>
+			<div class="swiper-slide" style="background-image: url(images/img_10.jpg);"></div>
+    	</div>
+    <!-- Add Pagination -->
+    	<div class="swiper-pagination"></div>
+  	</div>
+
+
+	<!-- Footer -->
+
+	<div class="footer">
+		<div class="footer__inner">
+			<p class="footer__title">Навигация</p>
+			<div class="footer__nav">
+				<a href="index.html" class="footer__link">Главная</a>
+				<a href="rules.html" class="footer__link">Правила</a>
+				<a href="gallery.html" class="footer__link">Галерея</a>
+				<a href="contact.html" class="footer__link">Обратная связь</a>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/swiper.min.js"></script>
+
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+
+</body>
+</html>
